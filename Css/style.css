@@ -4,12 +4,12 @@
 }
 
 header {
-  background-color: #0f2958;
+  background-color: #0b2b5d;
   box-shadow: 0px 10px 0px #000000;
 }
 
 nav {
-  background-color: #0f2958;
+  background-color: #0b2b5d;
   height: 80px;
   text-align: right;
 }
@@ -26,8 +26,8 @@ a {
   align-items: center;
   color: white;
   font-size: 20px;
-  font-family: 'Fira Code', Arial, Helvetica, sans-serif;
-  font-weight: 500;
+  font-family: 'Fira Code', monospace;
+  font-weight: 400;
   text-decoration: none;
   margin: 20px;
 }
@@ -37,6 +37,8 @@ a::before {
   width: 10px;
   height: 10px;
   background-color: #532574;
+  box-shadow: 1px 2px 0px #000000;
+
   margin-right: 10px;
 }
 
@@ -60,3 +62,66 @@ a::before {
 /*Final do header*/
 
 /* Inicio do main*/
+
+.tisub {
+  background-color: #572e43;
+  box-shadow: 5px 10px 0px #000;
+  position: absolute;
+  width: 627px;
+  height: 190px;
+  left: 91px;
+  top: 196px;
+  opacity: 1.9;
+}
+.t1 {
+  display: inline-flex;
+  position: relative;
+  left: 100px;
+  font-family: 'Press Start 2P', cursive;
+  color: #81cee9;
+  text-shadow: 4px 2px 2px #000000;
+
+  font-family: 'Press Start 2P', sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 40px;
+
+  margin-top: 50px;
+}
+
+.sub1 {
+  display: inline-flex;
+  position: relative;
+  left: 30px;
+  margin-top: 20px;
+
+  color: #5f889b;
+  text-shadow: 4px 2px 2px #000000;
+
+  font-family: 'Press Start 2P', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Titulo e /subtitulo*/
+
+.button-p {
+  position: relative;
+  display: inline;
+  background: #532574;
+  color: white;
+  font-size: 18px;
+  height: 60px;
+  width: 170px;
+  left: 463px;
+  top: 48px;
+  line-height: 26.24px;
+
+  box-shadow: 5px 5px 0px #000;
+}
