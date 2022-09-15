@@ -1,6 +1,7 @@
-* {
+body {
   margin: 0%;
   padding: 0%;
+  font-family: 'Fira code', sans-serif;
 }
 
 header {
@@ -21,7 +22,7 @@ nav {
   top: 10px;
 }
 
-a {
+.links {
   display: inline-flex;
   align-items: center;
   color: white;
@@ -32,7 +33,7 @@ a {
   margin: 20px;
 }
 
-a::before {
+.links::before {
   content: '';
   width: 10px;
   height: 10px;
@@ -42,7 +43,7 @@ a::before {
   margin-right: 10px;
 }
 
-#button {
+.button {
   display: inline-block;
   background: #532574;
   height: 50px;
@@ -55,7 +56,7 @@ a::before {
   transition: transform 350ms cubic-bezier(0.6, -0.32, 0, 4.17);
 }
 
-#button:hover {
+.button:hover {
   transform: scale(1.08);
 }
 
@@ -63,21 +64,47 @@ a::before {
 
 /* Inicio do main*/
 
+/* backgroud */
+.walpaper {
+  box-sizing: border-box;
+  background-image: url(/assets/Img/-1_orig.jpg);
+  height: 800px;
+  background-size: 100%;
+  margin-top: 10px;
+  border-bottom: 10px solid black;
+  padding-top: 116px;
+  padding-left: 91px;
+}
+
+.walpaper .wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 680px;
+}
+
+.walpaper .tisub {
+  margin-bottom: 40px;
+}
+
+.walpaper .buttons-w {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/*  caixa,title e subtitle*/
+
 .tisub {
+  display: inline-block;
   background-color: #572e43;
   box-shadow: 5px 10px 0px #000;
-  position: absolute;
-  width: 627px;
-  height: 190px;
-  left: 91px;
-  top: 196px;
   opacity: 1.9;
+  text-align: center;
+  padding: 44px 45px;
 }
+
 .t1 {
-  display: inline-flex;
   position: relative;
-  left: 100px;
-  font-family: 'Press Start 2P', cursive;
   color: #81cee9;
   text-shadow: 4px 2px 2px #000000;
 
@@ -87,15 +114,11 @@ a::before {
   letter-spacing: 1px;
   font-weight: 400;
   font-size: 40px;
-
-  margin-top: 50px;
+  margin-bottom: 28px;
 }
 
 .sub1 {
-  display: inline-flex;
   position: relative;
-  left: 30px;
-  margin-top: 20px;
 
   color: #5f889b;
   text-shadow: 4px 2px 2px #000000;
@@ -109,19 +132,21 @@ a::before {
   letter-spacing: 2px;
 }
 
-/* Titulo e /subtitulo*/
+/* buttons bacground*/
 
 .button-p {
-  position: relative;
-  display: inline;
   background: #532574;
   color: white;
   font-size: 18px;
-  height: 60px;
+  height: 50px;
   width: 170px;
-  left: 463px;
-  top: 48px;
   line-height: 26.24px;
 
   box-shadow: 5px 5px 0px #000;
+
+  transition: transform 350ms cubic-bezier(0.6, -0.32, 0, 4.17);
+}
+
+.button-p:hover {
+  transform: scale(1.08);
 }
