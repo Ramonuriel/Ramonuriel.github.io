@@ -62,39 +62,39 @@ nav {
 
 /*Final do header*/
 
-/* Inicio do main*/
+/* Inicio da section banner*/
 
-/* backgroud */
-.walpaper {
+/* banner */
+.banner {
   box-sizing: border-box;
   background-image: url(/assets/Img/-1_orig.jpg);
   height: 800px;
   background-size: 100%;
-  margin-top: 10px;
+  margin: 10px 0 0 0;
   border-bottom: 10px solid black;
   padding-top: 116px;
   padding-left: 91px;
 }
 
-.walpaper .wrapper {
+.banner .wrapper-banner {
   display: flex;
   flex-direction: column;
   width: 680px;
 }
 
-.walpaper .tisub {
+.banner .box-banner {
   margin-bottom: 40px;
 }
 
-.walpaper .buttons-w {
+.banner .buttons-banner {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-/*  caixa,title e subtitle*/
+/*  box,title e subtitle */
 
-.tisub {
+.box-banner {
   display: inline-block;
   background-color: #572e43;
   box-shadow: 5px 10px 0px #000;
@@ -103,7 +103,7 @@ nav {
   padding: 44px 45px;
 }
 
-.t1 {
+.tittle-banner {
   position: relative;
   color: #81cee9;
   text-shadow: 4px 2px 2px #000000;
@@ -117,7 +117,7 @@ nav {
   margin-bottom: 28px;
 }
 
-.sub1 {
+.subtittle-banner {
   position: relative;
 
   color: #5f889b;
@@ -132,9 +132,9 @@ nav {
   letter-spacing: 2px;
 }
 
-/* buttons bacground*/
+/* buttons banner*/
 
-.button-p {
+.button-b {
   background: #532574;
   color: white;
   font-size: 18px;
@@ -147,6 +147,51 @@ nav {
   transition: transform 350ms cubic-bezier(0.6, -0.32, 0, 4.17);
 }
 
-.button-p:hover {
+.button-b:hover {
   transform: scale(1.08);
+}
+
+/* Fim do  banner e seus componentes*/
+
+/*inicio da section skills*/
+
+.skills {
+  background-color: #532574;
+  padding-top: 10px;
+  height: 500px;
+  border-bottom: 10px solid #81cee9;
+  text-align: center;
+}
+
+.wrapper-skills {
+  text-align: center;
+}
+
+.tittle-skills {
+  color: white;
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 40px;
+  text-shadow: 5px 5px 2px black;
+}
+
+.skills-list1 {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 49%;
+}
+.skills-list2 {
+  display: inline-flex;
+  width: 48%;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.skills-link {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 400;
+  color: white;
 }
