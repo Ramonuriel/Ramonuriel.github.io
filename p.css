@@ -9,3 +9,7 @@
 .color3 { #0b2b5d };
 .color4 { #5f889b };
 .color5 { #8dadbb };
+
+<dd class="barr-skills">
+<progress value="70" max="100">70%</progress>
+</dd>

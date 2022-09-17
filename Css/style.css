@@ -103,7 +103,7 @@ nav {
   padding: 44px 45px;
 }
 
-.tittle-banner {
+.title-banner {
   position: relative;
   color: #81cee9;
   text-shadow: 4px 2px 2px #000000;
@@ -117,7 +117,7 @@ nav {
   margin-bottom: 28px;
 }
 
-.subtittle-banner {
+.subtitle-banner {
   position: relative;
 
   color: #5f889b;
@@ -155,43 +155,43 @@ nav {
 
 /*inicio da section skills*/
 
-.skills {
+.section-skills {
   background-color: #532574;
-  padding-top: 10px;
-  height: 500px;
-  border-bottom: 10px solid #81cee9;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  height: 730px;
+  background-size: 100%;
   text-align: center;
+
+  border-bottom: 10px solid #81cee9;
 }
 
 .wrapper-skills {
-  text-align: center;
 }
 
-.tittle-skills {
+.title-skills {
+  display: inline-block;
   color: white;
   font-family: 'Press Start 2P', sans-serif;
-  font-size: 25px;
+  font-size: 40px;
   font-weight: 400;
   line-height: 40px;
   text-shadow: 5px 5px 2px black;
+  text-align: center;
+}
+.skills {
+  display: flex;
 }
 
-.skills-list1 {
-  display: inline-flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 49%;
-}
-.skills-list2 {
-  display: inline-flex;
-  width: 48%;
-  justify-content: start;
-  flex-direction: column;
+.skills .icon {
+  margin-right: 20px;
 }
 
-.skills-link {
-  text-decoration: none;
+.title {
+  font-family: 'Press Start 2P', sans-serif;
   font-size: 25px;
   font-weight: 400;
   color: white;
+}
+.icon {
 }
