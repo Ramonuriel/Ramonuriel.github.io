@@ -11,11 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="/Css/style.css" />
+    <link rel="stylesheet" href="/Css/Skills.css" />
+    <link rel="stylesheet" href="/Css/Banner.css" />
 
     <title>Ramon Uriel</title>
   </head>
+
   <body>
     <header>
       <img class="logo" src="/assets/Img/logo.jpeg" alt="minha foto" />
@@ -29,6 +31,7 @@
       </nav>
     </header>
 
+    <!-- section do codigo do banner e seus componentes-->
     <section class="banner">
       <div class="wrapper-banner">
         <div class="box-banner">
@@ -42,39 +45,60 @@
         </div>
       </div>
     </section>
+
+    <!-- section do codigo das Skills e seus componentes-->
+
     <section class="section-skills">
       <h1 class="title-skills">Skills</h1>
 
       <!--Lita de Skills-->
+      <div class="wrapper-skills">
+        <article class="skills -space">
+          <img
+            class="icon"
+            src="/assets/Img/skills/ico_html5 (1).png"
+            alt="logo HTML"
+          />
+          <div class="right">
+            <h3 class="title">HTML</h3>
+            <progress class="progress-bar" value="80" max="100">80%</progress>
+          </div>
+        </article>
 
-      <dl class="skills">
-        <dd class="icon">
-          <img src="/assets/Img/skills/ico_html5 (1).png" alt="logo HTML" />
-        </dd>
-
-        <dt class="title">HTML</dt>
-      </dl>
-      <dl class="skills">
-        <dd class="icon">
-          <img src="/assets/Img/skills/ico_css3.png" alt="Logo CSS" />
-        </dd>
-
-        <dt class="title">CSS</dt>
-      </dl>
-      <dl class="skills">
-        <dd class="icon">
-          <img src="/assets/Img/skills/ico_js.png" alt="Logo JAVASCRIPT" />
-        </dd>
-
-        <dt class="title">JAVASCRIPT</dt>
-      </dl>
-      <dl class="skills">
-        <dd class="icon">
-          <img src="/assets/Img/skills/ico_js.png" alt="Logo GIT" />
-        </dd>
-
-        <dt class="title">GIT</dt>
-      </dl>
+        <article class="skills -space">
+          <img
+            class="icon"
+            src="/assets/Img/skills/ico_css3.png"
+            alt="Logo CSS"
+          />
+          <div class="right">
+            <h3 class="title">CSS</h3>
+            <progress class="progress-bar" value="70" max="100">70%</progress>
+          </div>
+        </article>
+        <article class="skills -space">
+          <img
+            class="icon"
+            src="/assets/Img/skills/ico_js.png"
+            alt="Logo JAVASCRIPT"
+          />
+          <div class="right">
+            <h3 class="title">JAVASCRIPT</h3>
+            <progress class="progress-bar" value="50" max="100">50%</progress>
+          </div>
+        </article>
+        <article class="skills -space">
+          <img
+            class="icon"
+            src="/assets/Img/skills/ico_js.png"
+            alt="Logo GIT"
+          />
+          <div class="right">
+            <h3 class="title">GIT</h3>
+            <progress class="progress-bar" value="70" max="100">70%</progress>
+          </div>
+        </article>
+      </div>
     </section>
   </body>
 </html>

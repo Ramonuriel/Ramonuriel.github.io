@@ -1,0 +1,77 @@
+.section-skills {
+  background-color: #532574;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  height: 430px;
+  background-size: 100%;
+  text-align: center;
+  align-items: center;
+
+  border-bottom: 10px solid #81cee9;
+}
+
+.title-skills {
+  display: inline-block;
+  color: white;
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  text-shadow: 5px 5px 2px black;
+  text-align: center;
+}
+
+.wrapper-skills {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.wrapper-skills .skills {
+  width: 430px;
+}
+
+.wrapper-skills .skills.-space {
+  margin-right: 10px;
+}
+
+.skills {
+  display: flex;
+}
+
+.skills .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skills .icon {
+  margin-right: 25px;
+  width: 90px;
+}
+
+.title {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: white;
+  display: inline-flex;
+}
+
+.progress-bar {
+  box-sizing: border-box;
+
+  border: 5px solid #000;
+  width: 362px;
+  height: 40px;
+  display: flex;
+}
+::-webkit-progress-value {
+  background-color: #a82510;
+}
+.progress-bar::-webkit-progress-bar,
+.progress-bar::-moz-progress-bar {
+  background-color: #fff;
+}
