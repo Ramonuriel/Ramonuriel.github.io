@@ -1,6 +1,6 @@
 .section-skills {
   background-color: #532574;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 100px;
   height: 430px;
   background-size: 100%;
@@ -19,22 +19,25 @@
   line-height: 40px;
   text-shadow: 5px 5px 2px black;
   text-align: center;
+  padding-bottom: 50px;
 }
 
 .wrapper-skills {
   display: flex;
   flex-wrap: wrap;
-  max-width: 960px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
+  justify-content: center;
 }
 
 .wrapper-skills .skills {
   width: 430px;
+  margin-bottom: 40px;
 }
 
-.wrapper-skills .skills.-space {
-  margin-right: 10px;
+.wrapper-skills .skills:nth-child(odd) {
+  margin-right: 60px;
 }
 
 .skills {
@@ -49,22 +52,23 @@
 
 .skills .icon {
   margin-right: 25px;
-  width: 90px;
+  width: 80px;
 }
 
-.title {
+.skills .title {
   font-family: 'Press Start 2P', sans-serif;
   font-size: 25px;
   font-weight: 400;
   color: white;
   display: inline-flex;
+  margin-bottom: 10px;
 }
 
 .progress-bar {
   box-sizing: border-box;
 
   border: 5px solid #000;
-  width: 362px;
+  width: 320px;
   height: 40px;
   display: flex;
 }
