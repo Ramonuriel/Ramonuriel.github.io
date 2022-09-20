@@ -2,7 +2,7 @@
   background-color: #532574;
   padding-top: 30px;
   padding-bottom: 100px;
-  height: 430px;
+  height: 630px;
   background-size: 100%;
   text-align: center;
   align-items: center;
@@ -25,7 +25,7 @@
 .wrapper-skills {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 1500px;
   margin-right: auto;
   margin-left: auto;
   justify-content: center;
