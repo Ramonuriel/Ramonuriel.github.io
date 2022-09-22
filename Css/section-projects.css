@@ -21,11 +21,10 @@
   text-align: center;
 }
 
-.section-projects .cards-projects {
-  box-sizing: border-box;
-  display: inline-flex;
-  margin-right: 90px;
-  padding-left: 70px;
+.section-projects .wrapper-cards {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .cards-projects .icon-projects {
