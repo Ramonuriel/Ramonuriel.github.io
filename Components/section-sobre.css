@@ -1,0 +1,105 @@
+.section-sobre {
+  background-color: #1fb1f2;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  max-width: 1440px;
+  height: 830px;
+  background-size: 100%;
+  text-align: center;
+
+  border-bottom: 10px solid black;
+}
+.section-sobre .title-sobre {
+  font-family: 'Press Start 2P', sans-serif;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.section-sobre .description-sobre {
+  color: #fff;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+.carrosel-sobre {
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.carrosel-sobre .button-arrow {
+  position: absolute;
+  bottom: 70px;
+}
+.button-arrow {
+  width: 50px;
+  height: 50px;
+  box-sizing: content-box;
+
+  background-color: #fff;
+  box-shadow: 5px 5px 2px #0b2b5d;
+  cursor: pointer;
+}
+
+.carrosel-sobre .button-arrow.-left {
+  left: 15px;
+}
+
+.carrosel-sobre .button-arrow.-right {
+  right: 15px;
+}
+
+.button-arrow::before {
+  content: '';
+  display: block;
+  box-sizing: border-box;
+  width: 17px;
+  height: 17px;
+  border: 20px solid transparent;
+  transform: translateX(13px);
+  border-left: 30px solid #0b2b5d;
+}
+
+.button-arrow.-left::before {
+  transform: rotate(180deg) translateX(13px);
+}
+
+.section-sobre .cards-sobre {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  margin: 0;
+}
+
+.section-sobre .cards-sobre .title-cards {
+  font-family: 'Press Start 2P';
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 25px;
+  margin-bottom: 50px;
+}
+
+.cards-sobre::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  border: 2.5px dashed black;
+  height: 0;
+  width: 40px;
+  transform: rotate(90deg) translateX(-62%);
+  bottom: 140px;
+}
+
+.section-sobre .cards-sobre .logo-cards {
+  display: flex;
+  height: 140px;
+  border: 2px solid black;
+}

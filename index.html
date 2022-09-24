@@ -1,125 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/Css/style.css" />
-    <link rel="stylesheet" href="/Css/section-Skills.css" />
-    <link rel="stylesheet" href="/Css/section-Banner.css" />
-    <link rel="stylesheet" href="/Css/section-projects.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Ramon Uriel</title>
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Press+Start+2P&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/Css/style.css" />
+  <link rel="stylesheet" href="/Components/section-Banner.css" />
+  <link rel="stylesheet" href="/Components/section-Skills.css" />
+  <link rel="stylesheet" href="/Components/section-projects.css" />
+  <link rel="stylesheet" href="/Components/section-sobre.css" />
+  <title>Ramon Uriel</title>
+</head>
 
-  <body>
+<body>
 
-    <!--Header e Nav da pagina-->
+  <!--Header e Nav da pagina-->
 
-    <header>
-      <img class="logo" src="/assets/Img/logo.jpeg" alt="minha foto" />
+  <header>
+    <img class="logo" src="/assets/Img/logo.jpeg" alt="minha foto" />
 
-      <nav>
-        <a class="links" href="#">Skills</a>
-        <a class="links" href="#">Projetos</a>
-        <a class="links" href="#">Sobre</a>
-        <a class="links" href="#">Contatos</a>
-        <a class="links button" href="#" class="button">Download CV</a>
-      </nav>
-    </header>
+    <nav>
+      <a class="links" href="#">Skills</a>
+      <a class="links" href="#">Projetos</a>
+      <a class="links" href="#">Sobre</a>
+      <a class="links" href="#">Contatos</a>
+      <a class="links button" href="#" class="button">Download CV</a>
+    </nav>
+  </header>
 
-    <!-- section do codigo do banner e seus componentes-->
+  <!-- section do codigo do banner e seus componentes-->
 
-    <section class="section-banner">
-      <div class="wrapper-banner">
-        <div class="box-banner">
-          <h1 class="title-banner">Ramon Uriel</h1>
-          <h2 class="subtitle-banner">FrontEnd Developer</h2>
-        </div>
-
-        <div class="buttons-banner">
-          <button class="button-b">Donwload CV</button>
-          <button class="button-b">Contatos</button>
-        </div>
+  <section class="section-banner">
+    <div class="wrapper-banner">
+      <div class="box-banner">
+        <h1 class="title-banner">Ramon Uriel</h1>
+        <h2 class="subtitle-banner">FrontEnd Developer</h2>
       </div>
-    </section>
 
-    <!-- section do codigo das Skills e seus componentes-->
+      <div class="buttons-banner">
+        <button class="button-b">Donwload CV</button>
+        <button class="button-b">Contatos</button>
+      </div>
+    </div>
+  </section>
 
-    <section class="section-skills">
-      <h1 class="title-skills">Skills</h1>
+  <!-- section do codigo das Skills e seus componentes-->
 
-      <!--Lita de Skills-->
-      <div class="wrapper-skills">
-        <article class="skills">
-          <img
-            class="icon"
-            src="/assets/Img/skills/ico_html5 (1).png"
-            alt="logo HTML"
-          />
-          <div class="right">
-            <h3 class="title">HTML</h3>
-            <progress class="progress-bar" value="80" max="100">80%</progress>
-          </div>
-        </article>
+  <section class="section-skills">
+    <h1 class="title-skills">Skills</h1>
 
-        <!-- Skill-HTML-->
+    <!--Lita de Skills-->
+    <div class="wrapper-skills">
+      <article class="skills">
+        <img class="icon" src="/assets/Img/skills/ico_html5 (1).png" alt="logo HTML" />
+        <div class="right">
+          <h3 class="title">HTML</h3>
+          <progress class="progress-bar" value="80" max="100">80%</progress>
+        </div>
+      </article>
 
-        <article class="skills">
-          <img
-            class="icon"
-            src="/assets/Img/skills/ico_css3.png"
-            alt="Logo CSS"
-          />
-          <div class="right">
-            <h3 class="title">CSS</h3>
-            <progress class="progress-bar" value="70" max="100">70%</progress>
-          </div>
-        </article> 
+      <!-- Skill-HTML-->
 
-        <!--Skill-CSS-->
+      <article class="skills">
+        <img class="icon" src="/assets/Img/skills/ico_css3.png" alt="Logo CSS" />
+        <div class="right">
+          <h3 class="title">CSS</h3>
+          <progress class="progress-bar" value="70" max="100">70%</progress>
+        </div>
+      </article>
 
-        <article class="skills">
-          <img
-            class="icon"
-            src="/assets/Img/skills/ico_js.png"
-            alt="Logo JAVASCRIPT"
-          />
-          <div class="right">
-            <h3 class="title">JAVASCRIPT</h3>
-            <progress class="progress-bar" value="50" max="100">50%</progress>
-          </div>
-        </article>
+      <!--Skill-CSS-->
 
-        <!--Skill-JAVASCRIPT-->
+      <article class="skills">
+        <img class="icon" src="/assets/Img/skills/ico_js.png" alt="Logo JAVASCRIPT" />
+        <div class="right">
+          <h3 class="title">JAVASCRIPT</h3>
+          <progress class="progress-bar" value="50" max="100">50%</progress>
+        </div>
+      </article>
 
-        <article class="skills">
-          <img
-            class="icon"
-            src="/assets/Img/skills/ico_js.png"
-            alt="Logo GIT"
-          />
-          <div class="right">
-            <h3 class="title">GIT</h3>
-            <progress class="progress-bar" value="70" max="100">70%</progress>
-          </div>
-        </article>
+      <!--Skill-JAVASCRIPT-->
+
+      <article class="skills">
+        <img class="icon" src="/assets/Img/skills/ico_js.png" alt="Logo GIT" />
+        <div class="right">
+          <h3 class="title">GIT</h3>
+          <progress class="progress-bar" value="70" max="100">70%</progress>
+        </div>
+      </article>
 
       <!--Skill-GIT-->
 
       <article class="skills">
-        <img
-          class="icon"
-          src="/assets/Img/skills/ico_nodejs.png"
-          alt="Logo NodeJs"
-        />
+        <img class="icon" src="/assets/Img/skills/ico_nodejs.png" alt="Logo NodeJs" />
         <div class="right">
           <h3 class="title">NodeJs</h3>
           <progress class="progress-bar" value="35" max="100">35</progress>
@@ -129,11 +108,7 @@
       <!--Skill-NodeJS-->
 
       <article class="skills">
-        <img
-        class="icon"
-        src="/assets/Img/skills/ico_react (1).png"
-        alt="Logo ReactJs"
-        />
+        <img class="icon" src="/assets/Img/skills/ico_react (1).png" alt="Logo ReactJs" />
         <div class="right">
           <h3 class="title">ReactJs</h3>
           <progress class="progress-bar" value="20" max="100">20%</progress>
@@ -145,47 +120,75 @@
 
   </section>
 
-    <!-- section do codigo do Project e seus componentes-->
+  <!-- section do codigo do Project e seus componentes-->
 
-    <section class="section-projects">
-      <h1 class="title-projects">Projetos</h1>
+  <section class="section-projects">
+    <h1 class="title-projects">Projetos</h1>
 
-      <div class="wrapper-cards">
-        <article class="cards-projects">
-          <div class="background-projects"> 
-            <a href="https://ramonuriel.github.io/Site-Pessoal/" target="_blank">
-              <img
-                class="icon-projects"
-                src="/assets/Img/projects/logo.jpeg"
-                alt="logo do meu projeto"
-              />
-            </a>
-          </div>
-        </article>
-        <article class="cards-projects">
-          <div class="background-projects"> 
-
-            <a href="" target="">
-              <img
-              class="icon-projects"
-              src="/assets/Img/projects/Picsart_22-09-19_19-47-14-205.jpg"
-              alt="logo Escritp EM BREVE"
-              />
-          </div>
+    <div class="wrapper-cards">
+      <article class="cards-projects">
+        <div class="background-projects">
+          <a href="https://ramonuriel.github.io/Site-Pessoal/" target="_blank">
+            <img class="icon-projects" src="/assets/Img/projects/logo.jpeg" alt="logo do meu projeto" />
           </a>
-        </article>
-        <article class="cards-projects">
-          <div class="background-projects"> 
-            <a href="" target="">
-              <img
-                class="icon-projects"
-                src="/assets/Img/projects/Picsart_22-09-19_19-47-14-205.jpg"
-                alt="logo escrito EM BREVE"
-              />
-            </a>
-          </div>
-        </article>
-      </div>
+        </div>
+      </article>
+      <article class="cards-projects">
+        <div class="background-projects">
+
+          <a href="" target="">
+            <img class="icon-projects" src="/assets/Img/projects/Picsart_22-09-19_19-47-14-205.jpg"
+              alt="logo Escritp EM BREVE" />
+        </div>
+        </a>
+      </article>
+      <article class="cards-projects">
+        <div class="background-projects">
+          <a href="" target="">
+            <img class="icon-projects" src="/assets/Img/projects/Picsart_22-09-19_19-47-14-205.jpg"
+              alt="logo escrito EM BREVE" />
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Section do codigo do Sobre e seus Componentes-->
+
+  <section class="section-sobre">
+    <h1 class="title-sobre">Sobre</h1>
+
+    <section class="carrosel-sobre">
+      <button class="button-arrow -right"></button>
+
+      <article class="cards-sobre">
+        <h2 class="title-cards">2018</h2>
+        <img class="logo-cards" src="/assets/Img/sobre/ETE.png" alt="">
+      </article>
+      <article class="cards-sobre">
+        <h2 class="title-cards">2020</h2>
+        <img class="logo-cards" src="/assets/Img/sobre/ficr.png" alt="">
+      </article>
+      <article class="cards-sobre">
+        <h2 class="title-cards">2021</h2>
+        <img src="/assets/Img/sobre/atacadao.png" alt="" class="logo-cards">
+      </article>
+
+
+      <button class="button-arrow -left"></button>
     </section>
-  </body>
+
+    <p class="description-sobre">
+      Hoje, instrutor e desenvolvedor FrontEnd/UX pela CollabCode, Marco já trabalhou nas mais diversas áreas. Foi
+      palhaço, entrou na área de TI como desenvolvedor HMI/PLC e gosta de ir descobrindo seu caminho conforme o
+      percorre. Marco também tem uma crescente presença em comunidades de UX e Front-end, trabalhando para uní-las,
+      palestra em empresas e eventos como o WebBR, escreve em diversos blogs como o da Caelum, o Pinceladas da Web e seu
+      Medium, quando não está jogando Airsoft ou trocando ideias com amigos.
+    </p>
+
+
+  </section>
+
+</body>
+
 </html>
