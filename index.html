@@ -15,6 +15,10 @@
   <link rel="stylesheet" href="/Components/section-Skills.css" />
   <link rel="stylesheet" href="/Components/section-projects.css" />
   <link rel="stylesheet" href="/Components/section-sobre.css" />
+  <link rel="stylesheet" href="/Components/section-contatos.css">
+  <link rel="stylesheet" href="/Components/section-footer.css">
+
+  <link rel="shortcut icon" href="/assets/Img/logo.jpeg" type="image/x-icon">
   <title>Ramon Uriel</title>
 </head>
 
@@ -26,17 +30,17 @@
     <img class="logo" src="/assets/Img/logo.jpeg" alt="minha foto" />
 
     <nav>
-      <a class="links" href="#">Skills</a>
-      <a class="links" href="#">Projetos</a>
-      <a class="links" href="#">Sobre</a>
-      <a class="links" href="#">Contatos</a>
+      <a class="links" href="#section-skills">Skills</a>
+      <a class="links" href="#section-projects">Projetos</a>
+      <a class="links" href="#section-sobre">Sobre</a>
+      <a class="links" href="#section-contatos">Contatos</a>
       <a class="links button" href="#" class="button">Download CV</a>
     </nav>
   </header>
 
   <!-- section do codigo do banner e seus componentes-->
 
-  <section class="section-banner">
+  <section id="section-banner">
     <div class="wrapper-banner">
       <div class="box-banner">
         <h1 class="title-banner">Ramon Uriel</h1>
@@ -52,7 +56,7 @@
 
   <!-- section do codigo das Skills e seus componentes-->
 
-  <section class="section-skills">
+  <section id="section-skills">
     <h1 class="title-skills">Skills</h1>
 
     <!--Lita de Skills-->
@@ -122,7 +126,7 @@
 
   <!-- section do codigo do Project e seus componentes-->
 
-  <section class="section-projects">
+  <section id="section-projects">
     <h1 class="title-projects">Projetos</h1>
 
     <div class="wrapper-cards">
@@ -155,7 +159,7 @@
 
   <!-- Section do codigo do Sobre e seus Componentes-->
 
-  <section class="section-sobre">
+  <section id="section-sobre">
     <h1 class="title-sobre">Sobre</h1>
 
     <section class="carrosel-sobre">
@@ -179,18 +183,79 @@
     </section>
 
     <p class="description-sobre">
-      Hoje, desenvolvedor FrontEnd formado pela Faculdade Imaculada do Recife, Ramon já trabalhou nas mais diversas áreas. Foi
-      palhaço, Empacotador Varejista (ATACADÃO), e Agora está tentando entrar na área de TI como desenvolvedor Jr, ele gosta de ir descobrindo seu caminho conforme o
-      percorre. 
-      Ramon, também já se Formou em Redes de Computadores pela Escola Tecnica Estadual Maximiano Accioly Campos (ETEMAC), e foi lá que ele descobriu que o seu lugar era na tecnologia.
-      Ramon, gosta Bastante de Ler sobre assuntos diversos e estar por dentro do mercado da Tecnologia, isso, quando não está jogando Futebol ou trocando ideias com amigos.
+      Hoje, desenvolvedor FrontEnd formado pela Faculdade Imaculada do Recife, Ramon já trabalhou nas mais diversas
+      áreas. Foi
+      palhaço, Empacotador Varejista (ATACADÃO), e Agora está tentando entrar na área de TI como desenvolvedor Jr, ele
+      gosta de ir descobrindo seu caminho conforme o
+      percorre.
+      Ramon, também já se Formou em Redes de Computadores pela Escola Tecnica Estadual Maximiano Accioly Campos
+      (ETEMAC), e foi lá que ele descobriu que o seu lugar era na tecnologia.
+      Ramon, gosta Bastante de Ler sobre assuntos diversos e estar por dentro do mercado da Tecnologia, isso, quando não
+      está jogando Futebol ou trocando ideias com amigos.
     </p>
 
 
   </section>
 
+  <!--Section do codigo dos contatos e seus componentes-->
+
+  <section id="section-contatos">
+    <h1 class="title-contatos">
+      Contatos
+    </h1>
+
+
+    <article class="input-contatos">
+
+      <article>
+        <label class="label-title" for="User">Nome</label>
+        <input class="input-name" type="name">
+      </article>
+
+      <article>
+        <label class="label-title" for="email">Email</label>
+        <input class="input-name" type="email">
+      </article>
+
+      <article>
+        <label class="label-title" for="text">Mensagem</ label>
+          <input class="input-mensagem" type="text">
+      </article>
+
+      <article>
+        <input class="input-button" type="button" value="Enviar" submit="Ramonuriel13@gmail.com">
+      </article>
+
+    </article>
+
+
+
+
+
+
+  </section>
 
   <script src="Js/components/carrosel.js"></script>
+
+
+  <footer>
+
+    <H3 class="title-footer">Feito Por Ramon Uriel </H3>
+    <section class="section-footer">
+
+      <article>
+        <a href="https://www.instagram.com/ramonuriel_/?theme=dark">
+          <img src="/assets/Img/Footer/icons8-instagram-64 (1).png" alt="Logotipo do instagram">
+        </a>
+      </article>
+      <article>
+        <a href="https://www.linkedin.com/in/ramonuriel/">
+          <img src="/assets/Img/Footer/icons8-linkedin-50.png" alt="Logotipo do Linkedin">
+        </a>
+      </article>
+    </section>
+
+  </footer>
 
 </body>
 

@@ -1,4 +1,4 @@
-.section-sobre {
+#section-sobre {
   background-color: #1fb1f2;
   padding-top: 30px;
   padding-bottom: 100px;
@@ -9,7 +9,7 @@
 
   border-bottom: 10px solid black;
 }
-.section-sobre .title-sobre {
+#section-sobre .title-sobre {
   font-family: 'Press Start 2P', sans-serif;
   color: #fff;
   font-size: 40px;
@@ -84,7 +84,7 @@
   transform: rotate(180deg) translateX(13px);
 }
 
-.section-sobre .cards-sobre {
+#section-sobre .cards-sobre {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -93,7 +93,7 @@
   margin: 0;
 }
 
-.section-sobre .cards-sobre .title-cards {
+#section-sobre .cards-sobre .title-cards {
   font-family: 'Press Start 2P';
   font-weight: 400;
   font-size: 25px;
@@ -113,13 +113,13 @@
   bottom: 140px;
 }
 
-.section-sobre .cards-sobre .logo-cards {
+#section-sobre .cards-sobre .logo-cards {
   display: flex;
   height: 140px;
   border: 2px solid black;
 }
 
-.section-sobre .description-sobre {
+#section-sobre .description-sobre {
   color: #fff;
   font-size: 30px;
   line-height: 40px;
