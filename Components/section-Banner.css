@@ -1,6 +1,6 @@
 #section-banner {
   box-sizing: border-box;
-  background-image: url(/assets/Img/-1_orig.jpg);
+  background-image: url(/assets/Img/banner/-1_orig.jpg);
   height: 800px;
   background-size: 100%;
   margin: 10px 0 0 0;
@@ -29,7 +29,7 @@
 
 .box-banner {
   display: inline-block;
-  background-color: #572e43;
+  background-color: var(--Color-primary);
   box-shadow: 5px 10px 0px #000;
   opacity: 1.9;
   text-align: center;
@@ -38,10 +38,10 @@
 
 .title-banner {
   position: relative;
-  color: #81cee9;
+  color: var(--text-color);
   text-shadow: 4px 2px 2px #000000;
 
-  font-family: 'Press Start 2P', sans-serif;
+  font-family: var(--font-secundary);
   font-style: normal;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -53,10 +53,10 @@
 .subtitle-banner {
   position: relative;
 
-  color: #5f889b;
-  text-shadow: 4px 2px 2px #000000;
+  color: var(--Color-secundary);
+  text-shadow: 4px 2px 2px black;
 
-  font-family: 'Press Start 2P', sans-serif;
+  font-family: var(--font-secundary);
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -68,8 +68,8 @@
 /* buttons banner*/
 
 .button-b {
-  background: #532574;
-  color: white;
+  background: var(--Color-primary);
+  color: var(--text-color);
   font-size: 18px;
   height: 50px;
   width: 170px;

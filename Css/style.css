@@ -1,17 +1,18 @@
 body {
   margin: 0%;
   padding: 0%;
-  font-family: 'Fira code', sans-serif;
+  font-family: var(--font-primary);
 }
 
 header {
-  background-color: #0b2b5d;
+  background-color: var(--Color-secundary);
   box-shadow: 0px 10px 0px #000000;
 }
 
 nav {
-  background-color: #0b2b5d;
+  background-color: var(--Color-secundary);
   height: 80px;
+  width: 100%;
   text-align: right;
 }
 .logo {
@@ -25,9 +26,9 @@ nav {
 .links {
   display: inline-flex;
   align-items: center;
-  color: white;
+  color: var(--text-color);
   font-size: 20px;
-  font-family: 'Fira Code', monospace;
+  font-family: var(--font-primary);
   font-weight: 400;
   text-decoration: none;
   margin: 20px;
@@ -37,7 +38,7 @@ nav {
   content: '';
   width: 10px;
   height: 10px;
-  background-color: #532574;
+  background-color: var(--Color-primary);
   box-shadow: 1px 2px 0px #000000;
 
   margin-right: 10px;
@@ -45,7 +46,7 @@ nav {
 
 .button {
   display: inline-block;
-  background: #532574;
+  background: var(--Color-primary);
   height: 50px;
   width: 150px;
   line-height: 50px;
@@ -59,4 +60,3 @@ nav {
 .button:hover {
   transform: scale(1.08);
 }
-

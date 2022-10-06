@@ -11,8 +11,8 @@
 }
 
 .title-contatos {
-  font-family: 'Press Start 2P', sans-serif;
-  color: #fff;
+  font-family: var(--font-secundary);
+  color: var(--text-color);
   font-size: 40px;
   font-weight: 400;
   line-height: 40px;
@@ -31,16 +31,17 @@
   font-size: 30px;
   font-weight: 300;
   line-height: 40px;
-  color: white;
+  color: var(--text-color);
 }
 
 .input-name {
   width: 1200px;
-  height: 30px;
+  height: 40px;
   margin-bottom: 40px;
   border: 3px solid black;
   box-shadow: 4px 4px 0 black;
   font-size: 20px;
+  box-sizing: border-box;
 }
 
 .input-mensagem {
@@ -54,14 +55,15 @@
 }
 
 .input-button {
+  font-family: var(--font-secundary);
   width: 1210px;
   height: 50px;
   margin-bottom: 40px;
   border: 3px solid black;
   box-shadow: 4px 4px 0 black;
-  background-color: #572e43;
+  background-color: var(--Color-primary);
   font-size: 20px;
-  color: white;
+  color: var(--text-color);
   cursor: pointer;
   transition: transform 350ms cubic-bezier(0.6, -0.32, 0, 4.17);
 }

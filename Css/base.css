@@ -1,0 +1,8 @@
+body {
+  --Color-primary: #532574;
+  --Color-secundary: #0b2b5d;
+  --text-color: #fff;
+  --font-primary: 'Fira code', sans-serif;
+  --font-secundary: 'Press Start 2P', sans-serif, monospace;
+  margin: 0%;
+}

@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Press+Start+2P&display=swap"
     rel="stylesheet" />
+
+  <link rel="stylesheet" href="/Css/base.css">
   <link rel="stylesheet" href="/Css/style.css" />
   <link rel="stylesheet" href="/Components/section-Banner.css" />
   <link rel="stylesheet" href="/Components/section-Skills.css" />
@@ -20,6 +22,7 @@
 
   <link rel="shortcut icon" href="/assets/Img/logo.jpeg" type="image/x-icon">
   <title>Ramon Uriel</title>
+  <meta name="description" content="Página do Portifolio de Ramon Uriel">
 </head>
 
 <body>
@@ -27,14 +30,16 @@
   <!--Header e Nav da pagina-->
 
   <header>
-    <img class="logo" src="/assets/Img/logo.jpeg" alt="minha foto" />
 
     <nav>
+      <img class="logo" src="/assets/Img/logo/logo.jpeg" alt="minha foto" />
       <a class="links" href="#section-skills">Skills</a>
       <a class="links" href="#section-projects">Projetos</a>
       <a class="links" href="#section-sobre">Sobre</a>
       <a class="links" href="#section-contatos">Contatos</a>
-      <a class="links button" href="#" class="button">Download CV</a>
+      <a class="links button" href="/assets/documents/CV- RAMON URIEL.pdf" download="CV- RAMON URIEL.pdf"
+        type="aplication/pdf" target="_blank" class="button">Download
+        CV</a>
     </nav>
   </header>
 
@@ -48,8 +53,13 @@
       </div>
 
       <div class="buttons-banner">
-        <button class="button-b">Donwload CV</button>
-        <button class="button-b">Contatos</button>
+        <a href="/assets/documents/CV- RAMON URIEL.pdf" download="CV- RAMON URIEL.pdf" type="aplication/pdf"
+          target="_blank">
+          <button class="button-b">Donwload CV</button>
+        </a>
+        <a href="mailto:Ramonuriel13@gmail.com">
+          <button class="button-b">Contatos</button>
+        </a>
       </div>
     </div>
   </section>
@@ -60,6 +70,9 @@
     <h1 class="title-skills">Skills</h1>
 
     <!--Lita de Skills-->
+
+
+    <!-- Skill-HTML-->
     <div class="wrapper-skills">
       <article class="skills">
         <img class="icon" src="/assets/Img/skills/ico_html5 (1).png" alt="logo HTML" />
@@ -69,7 +82,7 @@
         </div>
       </article>
 
-      <!-- Skill-HTML-->
+      <!--Skill-CSS-->
 
       <article class="skills">
         <img class="icon" src="/assets/Img/skills/ico_css3.png" alt="Logo CSS" />
@@ -79,7 +92,7 @@
         </div>
       </article>
 
-      <!--Skill-CSS-->
+      <!--Skill-JAVASCRIPT-->
 
       <article class="skills">
         <img class="icon" src="/assets/Img/skills/ico_js.png" alt="Logo JAVASCRIPT" />
@@ -89,7 +102,7 @@
         </div>
       </article>
 
-      <!--Skill-JAVASCRIPT-->
+      <!--Skill-GIT-->
 
       <article class="skills">
         <img class="icon" src="/assets/Img/skills/ico_js.png" alt="Logo GIT" />
@@ -99,7 +112,7 @@
         </div>
       </article>
 
-      <!--Skill-GIT-->
+      <!--Skill-NodeJS-->
 
       <article class="skills">
         <img class="icon" src="/assets/Img/skills/ico_nodejs.png" alt="Logo NodeJs" />
@@ -109,7 +122,7 @@
         </div>
       </article>
 
-      <!--Skill-NodeJS-->
+      <!--Skill-REACTJS-->
 
       <article class="skills">
         <img class="icon" src="/assets/Img/skills/ico_react (1).png" alt="Logo ReactJs" />
@@ -120,7 +133,6 @@
       </article>
     </div>
 
-    <!--Skill-REACTJS-->
 
   </section>
 
@@ -140,7 +152,7 @@
       <article class="cards-projects">
         <div class="background-projects">
 
-          <a href="" target="">
+          <a target="">
             <img class="icon-projects" src="/assets/Img/projects/Picsart_22-09-19_19-47-14-205.jpg"
               alt="logo Escritp EM BREVE" />
         </div>
@@ -148,7 +160,7 @@
       </article>
       <article class="cards-projects">
         <div class="background-projects">
-          <a href="" target="">
+          <a target="">
             <img class="icon-projects" src="/assets/Img/projects/Picsart_22-09-19_19-47-14-205.jpg"
               alt="logo escrito EM BREVE" />
           </a>
@@ -205,33 +217,26 @@
     </h1>
 
 
-    <article class="input-contatos">
+    <form class="input-contatos">
 
-      <article>
-        <label class="label-title" for="User">Nome</label>
-        <input class="input-name" type="name">
-      </article>
 
-      <article>
-        <label class="label-title" for="email">Email</label>
-        <input class="input-name" type="email">
-      </article>
-
-      <article>
-        <label class="label-title" for="text">Mensagem</ label>
-          <input class="input-mensagem" type="text">
-      </article>
-
-      <article>
-        <input class="input-button" type="button" value="Enviar" submit="Ramonuriel13@gmail.com">
-      </article>
-
-    </article>
+      <label class="label-title" for="name">Nome</label>
+      <input id="name" class="input-name" type="text" required>
 
 
 
+      <label class="label-title" for="email">Email</label>
+      <input id="email" class="input-name" type="email" required>
 
 
+      <label class="label-title" for="text">Mensagem</label>
+      <textarea name="" id="text" class="input-mensagem" cols="30" rows="10" required>  </textarea>
+
+
+      <input class="input-button" type="submit" value="Enviar">
+
+
+    </form>
 
   </section>
 
@@ -244,13 +249,13 @@
     <section class="section-footer">
 
       <article>
-        <a href="https://www.instagram.com/ramonuriel_/?theme=dark">
-          <img src="/assets/Img/Footer/icons8-instagram-64 (1).png" alt="Logotipo do instagram">
+        <a href="https://www.instagram.com/ramonuriel_/?theme=dark" target="_blank">
+          <img class="logo-footer" src="/assets/Img/Footer/icons8-instagram-64 (1).png" alt="Logotipo do instagram">
         </a>
       </article>
       <article>
-        <a href="https://www.linkedin.com/in/ramonuriel/">
-          <img src="/assets/Img/Footer/icons8-linkedin-50.png" alt="Logotipo do Linkedin">
+        <a href="https://www.linkedin.com/in/ramonuriel/" target="_blank">
+          <img class="logo-footer" src="/assets/Img/Footer/icons8-linkedin-50.png" alt="Logotipo do Linkedin">
         </a>
       </article>
     </section>

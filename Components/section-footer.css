@@ -9,12 +9,18 @@ footer {
 }
 
 .title-footer {
-  color: white;
-  font-family: 'Press Start 2P', sans-serif;
+  color: var(--text-color);
+  font-family: var(--font-secundary);
+  font-size: 25px;
 }
 
 .section-footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.logo-footer {
+  width: 60px;
+  height: 60px;
 }
