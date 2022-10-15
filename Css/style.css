@@ -7,31 +7,36 @@ body {
 header {
   background-color: var(--Color-secundary);
   box-shadow: 0px 10px 0px #000000;
+  display: flex;
+  width: 100%;
+  justify-content: end;
 }
 
 nav {
   background-color: var(--Color-secundary);
-  height: 80px;
-  width: 100%;
-  text-align: right;
 }
+
 .logo {
   position: absolute;
+  left: 10px;
   width: 60px;
   height: 60px;
-  left: 20px;
   top: 10px;
+  max-width: 60px;
 }
 
 .links {
   display: inline-flex;
   align-items: center;
   color: var(--text-color);
-  font-size: 20px;
+  font-size: 2rem;
   font-family: var(--font-primary);
   font-weight: 400;
   text-decoration: none;
-  margin: 20px;
+
+}
+.links:hover {
+  border-bottom: 3px solid var(--Color-primary);
 }
 
 .links::before {
@@ -47,9 +52,6 @@ nav {
 .button {
   display: inline-block;
   background: var(--Color-primary);
-  height: 50px;
-  width: 150px;
-  line-height: 50px;
   padding-inline: 20px;
   margin-right: 30px;
   box-shadow: 5px 5px 0px #000;

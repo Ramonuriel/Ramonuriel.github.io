@@ -1,0 +1,6 @@
+<button class="button-arrow -right"></button>
+<button class="button-arrow -left"></button>
+
+
+grid-template-columns: repeat(2, minmax(500px, 1fr));
+display: inline-grid;

@@ -1,8 +1,188 @@
-body {
+html {
   --Color-primary: #532574;
   --Color-secundary: #0b2b5d;
   --text-color: #fff;
   --font-primary: 'Fira code', sans-serif;
   --font-secundary: 'Press Start 2P', sans-serif, monospace;
-  margin: 0%;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  width: 100%;
+  max-width: 2560px;
+  height: 100%;
+  max-height: 670px;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+/* Responsividade*/
+
+@media (min-width: 1300px) {
+  /* Section Banner*/
+  .wrapper-banner {
+    box-sizing: content-box;
+    width: 53%;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 1024px) {
+  /*Style*/
+  .links {
+    margin: 20px;
+  }
+
+  /* botão nav */
+  .button {
+    height: 50px;
+    width: 150px;
+    line-height: 50px;
+  }
+  /* Section Banner*/
+  .wrapper-banner {
+    box-sizing: content-box;
+
+    white-space: nowrap;
+  }
+
+  .button-b {
+    width: 200px;
+    line-height: 2.6rem;
+  }
+
+  /*section skills*/
+  .icon {
+    width: auto;
+    height: auto;
+  }
+
+  .progress-bar {
+    width: 100%;
+    min-width: 320px;
+    height: 40px;
+  }
+
+  /* Section projects */
+
+  .wrapper-cards {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  }
+
+  .background-projects {
+    width: 270px;
+    height: 270px;
+  }
+}
+
+/* Responsivo Portatil */
+
+@media (max-width: 1024px) {
+  .icon {
+    width: 17%;
+  }
+
+  .progress-bar {
+    width: 80%;
+    height: 30px;
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 905px) {
+  html {
+    font-size: 50%;
+  }
+
+  /* botão nav */
+  .button {
+    height: 45px;
+    padding-inline: 0%;
+    box-sizing: content-box;
+    white-space: nowrap;
+    line-height: 45px;
+  }
+
+  /* Section Banner*/
+
+  .wrapper-banner {
+    box-sizing: content-box;
+    width: 75%;
+    white-space: nowrap;
+  }
+
+  .title-banner {
+    font-size: 3rem;
+  }
+
+  .subtitle-banner {
+    font-size: 2rem;
+  }
+
+  .button-b {
+    width: 150px;
+    line-height: 45px;
+  }
+
+  /*section skills*/
+
+  .icon {
+    width: 17%;
+  }
+
+  .background-projects {
+    width: 215px;
+    height: 215px;
+  }
+}
+
+/* Responsivo Tablet*/
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+    width: 100%;
+  }
+
+  /*style*/
+
+  .links {
+    margin: 16px;
+  }
+
+  /* botão nav */
+  .button {
+    height: 40px;
+    padding-inline: 0%;
+    box-sizing: content-box;
+    white-space: nowrap;
+    line-height: 40px;
+  }
+
+  /* Section Banner*/
+
+  .wrapper-banner {
+    box-sizing: content-box;
+    width: 75%;
+    white-space: nowrap;
+    margin-left: 10px;
+  }
+
+  .title-banner {
+    font-size: 2rem;
+  }
+
+  .subtitle-banner {
+    font-size: 1.5rem;
+  }
+
+  .button-b {
+    width: 100px;
+    line-height: 40px;
+  }
+
+  /* Section Projects*/
+
+  .wrapper-cards {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
 }

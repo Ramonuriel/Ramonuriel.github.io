@@ -1,8 +1,10 @@
 #section-banner {
   box-sizing: border-box;
   background-image: url(/assets/Img/banner/-1_orig.jpg);
-  height: 800px;
-  background-size: 100%;
+  height: 720px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   margin: 10px 0 0 0;
   border-bottom: 10px solid black;
   padding-top: 116px;
@@ -10,9 +12,9 @@
 }
 
 #section-banner .wrapper-banner {
+  position: absolute;
   display: flex;
   flex-direction: column;
-  width: 680px;
 }
 
 #section-banner .box-banner {
@@ -46,7 +48,7 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 4rem;
   margin-bottom: 28px;
 }
 
@@ -59,7 +61,7 @@
   font-family: var(--font-secundary);
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 3rem;
 
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -70,10 +72,9 @@
 .button-b {
   background: var(--Color-primary);
   color: var(--text-color);
-  font-size: 18px;
+  font-size: 1.8rem;
   height: 50px;
-  width: 170px;
-  line-height: 26.24px;
+
   cursor: pointer;
 
   box-shadow: 5px 5px 0px #000;
