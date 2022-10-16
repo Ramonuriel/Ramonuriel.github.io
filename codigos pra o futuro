@@ -4,3 +4,54 @@
 
 grid-template-columns: repeat(2, minmax(500px, 1fr));
 display: inline-grid;
+
+
+.wrapper-banner {
+  box-sizing: content-box;
+  width: 53%;
+  white-space: nowrap;
+}
+
+
+
+@media (max-width: 905px) {
+  html {
+    font-size: 50%;
+  }
+
+  /* botão nav */
+  .button {
+    height: 45px;
+    padding-inline: 0%;
+    box-sizing: content-box;
+    white-space: nowrap;
+    line-height: 45px;
+  }
+
+  /* Section Banner*/
+
+  .wrapper-banner {
+    box-sizing: content-box;
+    width: 75%;
+    white-space: nowrap;
+  }
+
+  .title-banner {
+    font-size: 3rem;
+  }
+
+  .subtitle-banner {
+    font-size: 2rem;
+  }
+
+  .button-b {
+    width: 150px;
+    line-height: 45px;
+  }
+
+  /*section skills*/
+
+  .icon {
+    width: 17%;
+  }
+}

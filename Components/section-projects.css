@@ -17,9 +17,9 @@
   text-align: center;
 }
 
-#section-projects .wrapper-cards {
+.wrapper-cards {
   display: grid;
-  grid-column-gap: px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
   justify-items: center;
 }
 
@@ -27,11 +27,11 @@
   background: var(--Color-secundary);
   width: auto;
   height: 100%;
-
 }
 
 .cards-projects .background-projects {
-
+  width: 270px;
+  height: 270px;
   background-color: #000000;
   box-shadow: 10px 10px 0 var(--Color-primary);
 }

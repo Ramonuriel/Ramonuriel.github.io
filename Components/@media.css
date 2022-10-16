@@ -1,0 +1,104 @@
+/* Responsivo Portatil */
+
+@media (max-width: 1024px) {
+  nav .links {
+    margin: 14px;
+  }
+
+  #section-banner .wrapper-banner {
+    box-sizing: content-box;
+    width: 80%;
+    white-space: nowrap;
+    margin-left: 10px;
+  }
+
+  .icon {
+    width: 17%;
+  }
+
+  .progress-bar {
+    width: 80%;
+    height: 30px;
+    min-width: 250px;
+  }
+  /*section projects*/
+  #section-sobre .logo-cards {
+    height: 130px;
+    width: 140px;
+  }
+
+  .cards-sobre::before {
+    width: 40px;
+  }
+}
+
+/* Responsivo Tablet*/
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+    width: 100%;
+    box-sizing: content-box;
+  }
+
+  /*style*/
+
+  nav .links {
+    margin: 12px;
+  }
+
+  /* botão nav */
+  nav .button {
+    height: 40px;
+    padding-inline: 0%;
+    box-sizing: content-box;
+    white-space: nowrap;
+    line-height: 40px;
+  }
+
+  /* Section Banner*/
+
+  #section-banner .wrapper-banner {
+    box-sizing: content-box;
+    width: 70%;
+    white-space: nowrap;
+    margin-left: 10px;
+  }
+
+  #section-banner .title-banner {
+    font-size: 3rem;
+  }
+
+  #section-banner .subtitle-banner {
+    font-size: 2.5rem;
+  }
+
+  #section-banner .button-b {
+    width: 150px;
+    line-height: 40px;
+  }
+
+  /* Section Projects*/
+
+  #section-projects .wrapper-cards {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+  #section-projects .background-projects {
+    width: 220px;
+    height: 220px;
+  }
+
+  /* section sobre */
+
+  .cards-sobre::before {
+    height: 0;
+    width: 35px;
+    bottom: 135px;
+  }
+
+  /*section contatos */
+
+  #section-contatos .input-name {
+    margin-left: 0%;
+  }
+}
