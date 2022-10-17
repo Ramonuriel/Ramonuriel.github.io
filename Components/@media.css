@@ -30,6 +30,18 @@
   .cards-sobre::before {
     width: 40px;
   }
+
+  /* section-contatos */
+
+  #section-contatos .input-name {
+    margin-left: 0%;
+    width: 92%;
+  }
+
+  #section-contatos .input-email {
+    margin-left: 0%;
+    width: 92%;
+  }
 }
 
 /* Responsivo Tablet*/
@@ -54,6 +66,22 @@
     box-sizing: content-box;
     white-space: nowrap;
     line-height: 40px;
+  }
+
+  /* section skills */
+
+  #section-skills .progress-bar {
+    min-width: 200px;
+    height: 30px;
+  }
+
+  #section-skills .icon {
+    width: 20%;
+    height: 70px;
+  }
+
+  #section-skills .title {
+    font-size: 15px;
   }
 
   /* Section Banner*/
@@ -90,9 +118,9 @@
 
   /* section sobre */
 
-  .cards-sobre::before {
+  #section-sobre .cards-sobre::before {
     height: 0;
-    width: 35px;
+    width: 40px;
     bottom: 135px;
   }
 
@@ -100,5 +128,217 @@
 
   #section-contatos .input-name {
     margin-left: 0%;
+  }
+}
+
+/* Responsivo Mobile Large */
+
+@media (max-width: 425px) {
+  html {
+    width: 100%;
+    font-size: 40%;
+    box-sizing: content-box;
+  }
+
+  /* botão nav */
+
+  header nav .button {
+    width: 20%;
+    height: 30px;
+    padding-inline: 20px;
+    box-sizing: content-box;
+    white-space: nowrap;
+    line-height: 30px;
+  }
+
+  /* Section Banner*/
+
+  #section-banner .box-banner {
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    box-shadow: 3px 6px 0px #000;
+  }
+
+  #section-banner {
+    padding-top: 60px;
+    height: 450px;
+  }
+
+  #section-banner .wrapper-banner {
+    box-sizing: content-box;
+    align-items: center;
+    width: 20%;
+    height: 0%;
+    white-space: nowrap;
+    margin-left: 70px;
+  }
+
+  #section-banner .title-banner {
+    font-size: 3.5rem;
+  }
+
+  #section-banner .subtitle-banner {
+    font-size: 2.5rem;
+  }
+
+  #section-banner .button-b {
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 1px 3px 0px #000;
+  }
+
+  /* section skills */
+
+  #section-skills {
+    padding-bottom: 0px;
+  }
+
+  #section-skills .title-skills {
+    font-size: 3.5rem;
+  }
+
+  #section-skills .progress-bar {
+    min-width: 120px;
+    height: 20px;
+    border: 3px solid #000;
+  }
+
+  #section-skills .icon {
+    width: 30%;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  #section-skills .title {
+    font-size: 12px;
+  }
+
+  #section-skills .wrapper-skills {
+    margin-bottom: 30px;
+  }
+
+  /* Section Projects*/
+
+  #section-projects {
+    padding-bottom: 50px;
+  }
+
+  #section-projects .title-projects {
+    font-size: 3.5rem;
+  }
+
+  #section-projects .wrapper-cards {
+    grid-template-columns: repeat(3, minmax(70px, 0.5fr));
+  }
+  #section-projects .background-projects {
+    width: 105px;
+    height: 108px;
+  }
+
+  /* section sobre */
+
+  #section-sobre {
+    padding-bottom: 50px;
+  }
+
+  #section-sobre .title-sobre {
+    font-size: 3.5rem;
+  }
+
+  #section-sobre .cards-sobre .logo-cards {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+  }
+
+  #section-sobre .cards-sobre::before {
+    height: 0;
+    width: 25px;
+    bottom: 98px;
+  }
+
+  #section-sobre .description-sobre {
+    font-size: 2.5rem;
+    line-height: 4rem;
+    font-weight: 400;
+    text-align: justify;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  /* Section contatos*/
+
+  #section-contatos {
+    padding-bottom: 50px;
+    height: 510px;
+  }
+
+  #section-contatos .input-contatos {
+    margin-left: 50px;
+    margin-right: 0px;
+  }
+  #section-contatos .title-contatos {
+    font-size: 3.5rem;
+  }
+
+  #section-contatos .input-name {
+    width: 87%;
+    margin-left: 0%;
+    height: 30px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 0 black;
+    font-size: 2rem;
+    box-sizing: border-box;
+  }
+
+  #section-contatos .input-email {
+    width: 87%;
+    margin-left: 0%;
+    height: 30px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 0 black;
+    font-size: 2rem;
+    box-sizing: border-box;
+  }
+
+  #section-contatos .input-mensagem {
+    width: 85%;
+    height: 150px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    box-shadow: 4px 4px 0 black;
+    font-size: 2rem;
+    text-align: start;
+  }
+
+  #section-contatos .input-button {
+    font-family: var(--font-secundary);
+    width: 88%;
+    height: 40px;
+    margin-bottom: 0px;
+    border: 3px solid black;
+    box-shadow: 4px 4px 0 black;
+  }
+
+  /* section footer*/
+
+  footer {
+    padding-bottom: 10px;
+    height: 100px;
+  }
+
+  .title-footer {
+    font-size: 2rem;
+  }
+
+  .logo-footer {
+    width: 50px;
+    height: 50px;
   }
 }
