@@ -39,6 +39,9 @@ nav {
 .links:hover {
   border-bottom: 3px solid var(--Color-primary);
 }
+.menu-links:focus {
+  color: var(--Color-primary);
+}
 
 .links::before {
   content: '';

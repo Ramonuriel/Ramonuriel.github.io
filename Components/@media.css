@@ -1,4 +1,9 @@
 /* Responsivo Portatil */
+@media (max-width: 2560px) {
+  .menu-links {
+    display: none;
+  }
+}
 
 @media (max-width: 1024px) {
   nav .links {
@@ -228,62 +233,93 @@
     box-sizing: content-box;
   }
 
-  .menu-section .one,
+  .menu .one,
   .two,
   .three {
-    background-color: white;
+    background-color: var(--text-color);
     width: 100%;
     height: 5px;
     margin: 5px auto;
-    transition-duration: 0.3ms;
-    display: none;
+    transition-duration: 0.3s;
+    display: block;
   }
-  .menu-section .menu-toggle {
+  .menu .menu-toggle {
     width: 40px;
     height: 30px;
     margin-top: 30px;
     margin-right: 20px;
-    display: none;
+  }
+  .menu {
+    display: inline-flex;
+    flex-direction: row;
   }
 
-  .menu-section.on {
+  .menu.on {
     position: absolute;
     top: 0;
     right: 0;
-
+    display: flex;
+    justify-content: center;
     width: 100vw;
     height: 15vh;
-    opacity: 0.6;
+    opacity: 0.9;
 
     background-color: var(--Color-primary);
 
     z-index: 10;
+  }
+
+  .menu .menu-links {
+    transition-duration: 0.5s;
+  }
+
+  .menu-links {
+    margin-right: 30px;
+    display: inline-flex;
+    color: var(--text-color);
+    font-size: 2.5rem;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  .menu-links:hover {
+    border-bottom: 3px solid var(--Color-primary);
+  }
+
+  .menu .menu-links {
     display: none;
   }
 
-  .links {
-    display: none;
+  .menu .menu-toggle {
+    margin-bottom: 30px;
+    cursor: pointer;
   }
 
-  .menu-section.on .links {
+  .menu.on .menu-links {
     display: block;
   }
 
-  .menu-section.on .menu-toggle {
+  .menu.on .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu.on .menu-toggle {
     position: absolute;
     right: 0;
     top: 0px;
   }
 
-  .menu-section.on .menu-toggle .one {
+  .menu.on .menu-toggle .one {
     transform: rotate(45deg) translate(2px, 6px);
   }
 
-  .menu-section.on .menu-toggle .two {
+  .menu.on .menu-toggle .two {
     opacity: 0;
   }
 
-  .menu-section.on .menu-toggle .three {
+  .menu.on .menu-toggle .three {
     transform: rotate(-45deg) translate(7px, -12px);
   }
 
@@ -292,6 +328,10 @@
   nav {
     align-items: center;
     display: flex;
+  }
+
+  nav .links {
+    display: none;
   }
 
   nav .links::before {
@@ -510,6 +550,40 @@
     width: 100%;
     font-size: 40%;
     box-sizing: content-box;
+  }
+
+  /* Menu Hamburguer */
+
+  .menu.on {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 80vh;
+    opacity: 0.9;
+
+    background-color: var(--Color-primary);
+
+    z-index: 10;
+  }
+
+  .menu-links {
+    margin-right: 30px;
+    display: inline-flex;
+    color: var(--text-color);
+    font-size: 4rem;
+    line-height: 4;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  .menu-links:hover {
+    border-bottom: 3px solid var(--Color-primary);
   }
 
   /* botão nav */
