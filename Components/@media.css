@@ -236,12 +236,14 @@
     height: 5px;
     margin: 5px auto;
     transition-duration: 0.3ms;
+    display: none;
   }
   .menu-section .menu-toggle {
     width: 40px;
     height: 30px;
     margin-top: 30px;
     margin-right: 20px;
+    display: none;
   }
 
   .menu-section.on {
@@ -256,6 +258,7 @@
     background-color: var(--Color-primary);
 
     z-index: 10;
+    display: none;
   }
 
   .links {
@@ -1187,17 +1190,17 @@
   }
 
   header nav .button {
-    width: 70px;
-    height: 30px;
+    width: 73px;
+    height: 40px;
     box-sizing: content-box;
     white-space: nowrap;
-    line-height: 30px;
+    line-height: 40px;
     display: inline-flex;
     color: var(--text-color);
     font-family: var(--font-primary);
     font-weight: 400;
     align-items: center;
-    display: none;
+    font-size: 2.5rem;
   }
 
   .button:hover {
@@ -1339,7 +1342,7 @@
   }
 
   #section-contatos .input-name {
-    width: 87%;
+    width: 89%;
     margin-left: 0%;
     height: 30px;
     margin-bottom: 10px;
@@ -1350,7 +1353,7 @@
   }
 
   #section-contatos .input-email {
-    width: 87%;
+    width: 89%;
     margin-left: 0%;
     height: 30px;
     margin-bottom: 10px;
@@ -1361,7 +1364,7 @@
   }
 
   #section-contatos .input-mensagem {
-    width: 85%;
+    width: 88%;
     height: 150px;
     margin-bottom: 20px;
     border: 2px solid black;
@@ -1372,7 +1375,7 @@
 
   #section-contatos .input-button {
     font-family: var(--font-secundary);
-    width: 88%;
+    width: 91%;
     height: 40px;
     margin-bottom: 0px;
     border: 3px solid black;
@@ -1425,7 +1428,6 @@
     font-family: var(--font-primary);
     font-weight: 400;
     align-items: center;
-    display: none;
   }
 
   .button:hover {
@@ -1568,7 +1570,7 @@
 
   #section-contatos .input-name {
     width: 87%;
-    margin-left: 0%;
+    margin-left: ;
     height: 30px;
     margin-bottom: 10px;
     border: 2px solid black;
