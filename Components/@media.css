@@ -44,9 +44,9 @@
   }
 }
 
-/* Responsivo Tablet*/
+/*responsivo do tablet até o portatil */
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   html {
     font-size: 50%;
     width: 100%;
@@ -131,7 +131,376 @@
   }
 }
 
-/* Responsivo Mobile Large */
+/* Responsivo Tablet*/
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+    width: 100%;
+    box-sizing: content-box;
+  }
+
+  /*style*/
+
+  nav .links {
+    margin: 12px;
+  }
+
+  /* botão nav */
+  header nav .button {
+    width: 150px;
+    height: 40px;
+    padding-inline: 10px;
+    box-sizing: content-box;
+    white-space: nowrap;
+    line-height: 40px;
+  }
+
+  /* section skills */
+
+  #section-skills .progress-bar {
+    min-width: 200px;
+    height: 30px;
+  }
+
+  #section-skills .icon {
+    width: 20%;
+    height: 70px;
+  }
+
+  #section-skills .title {
+    font-size: 15px;
+  }
+
+  /* Section Banner*/
+
+  #section-banner .wrapper-banner {
+    box-sizing: content-box;
+    width: 70%;
+    white-space: nowrap;
+    margin-left: 10px;
+  }
+
+  #section-banner .title-banner {
+    font-size: 3rem;
+  }
+
+  #section-banner .subtitle-banner {
+    font-size: 2.5rem;
+  }
+
+  #section-banner .button-b {
+    width: 150px;
+    line-height: 40px;
+  }
+
+  /* Section Projects*/
+
+  #section-projects .wrapper-cards {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+  #section-projects .background-projects {
+    width: 220px;
+    height: 220px;
+  }
+
+  /* section sobre */
+
+  #section-sobre .cards-sobre::before {
+    height: 0;
+    width: 40px;
+    bottom: 135px;
+  }
+
+  /*section contatos */
+
+  #section-contatos .input-name {
+    margin-left: 0%;
+  }
+}
+
+/* Responsivo Mobile Large ate tablet */
+
+@media (max-width: 767px) {
+  html {
+    width: 100%;
+    font-size: 40%;
+    box-sizing: content-box;
+  }
+
+  .menu-section .one,
+  .two,
+  .three {
+    background-color: white;
+    width: 100%;
+    height: 5px;
+    margin: 5px auto;
+    transition-duration: 0.3ms;
+  }
+  .menu-section .menu-toggle {
+    width: 40px;
+    height: 30px;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+
+  .menu-section.on {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 100vw;
+    height: 15vh;
+    opacity: 0.6;
+
+    background-color: var(--Color-primary);
+
+    z-index: 10;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .menu-section.on .links {
+    display: block;
+  }
+
+  .menu-section.on .menu-toggle {
+    position: absolute;
+    right: 0;
+    top: 0px;
+  }
+
+  .menu-section.on .menu-toggle .one {
+    transform: rotate(45deg) translate(2px, 6px);
+  }
+
+  .menu-section.on .menu-toggle .two {
+    opacity: 0;
+  }
+
+  .menu-section.on .menu-toggle .three {
+    transform: rotate(-45deg) translate(7px, -12px);
+  }
+
+  /* botão nav */
+
+  nav {
+    align-items: center;
+    display: flex;
+  }
+
+  nav .links::before {
+    display: none;
+  }
+
+  header nav .button {
+    width: 80px;
+    height: 35px;
+    box-sizing: content-box;
+    white-space: nowrap;
+    line-height: 35px;
+    display: flex;
+    color: var(--text-color);
+    font-family: var(--font-primary);
+    font-weight: 400;
+    align-items: center;
+  }
+
+  .button:hover {
+    border-bottom: 3px solid var(--Color-primary);
+  }
+
+  /* Section Banner*/
+
+  #section-banner .box-banner {
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    box-shadow: 3px 6px 0px #000;
+  }
+
+  #section-banner {
+    padding-top: 60px;
+    height: 450px;
+  }
+
+  #section-banner .wrapper-banner {
+    box-sizing: content-box;
+    align-items: center;
+    width: 20%;
+    height: 0%;
+    white-space: nowrap;
+    margin-left: 70px;
+  }
+
+  #section-banner .title-banner {
+    font-size: 3.5rem;
+  }
+
+  #section-banner .subtitle-banner {
+    font-size: 2.5rem;
+  }
+
+  #section-banner .button-b {
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 1px 3px 0px #000;
+  }
+
+  /* section skills */
+
+  #section-skills {
+    padding-bottom: 0px;
+  }
+
+  #section-skills .title-skills {
+    font-size: 3.5rem;
+  }
+
+  #section-skills .progress-bar {
+    min-width: 120px;
+    height: 20px;
+    border: 3px solid #000;
+  }
+
+  #section-skills .icon {
+    width: 30%;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  #section-skills .title {
+    font-size: 12px;
+  }
+
+  #section-skills .wrapper-skills {
+    margin-bottom: 30px;
+  }
+
+  /* Section Projects*/
+
+  #section-projects {
+    padding-bottom: 50px;
+  }
+
+  #section-projects .title-projects {
+    font-size: 3.5rem;
+  }
+
+  #section-projects .wrapper-cards {
+    grid-template-columns: repeat(3, minmax(70px, 0.5fr));
+  }
+  #section-projects .background-projects {
+    width: 105px;
+    height: 108px;
+  }
+
+  /* section sobre */
+
+  #section-sobre {
+    padding-bottom: 50px;
+  }
+
+  #section-sobre .title-sobre {
+    font-size: 3.5rem;
+  }
+
+  #section-sobre .cards-sobre .logo-cards {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+  }
+
+  #section-sobre .cards-sobre::before {
+    height: 0;
+    width: 25px;
+    bottom: 98px;
+  }
+
+  #section-sobre .description-sobre {
+    font-size: 2.5rem;
+    line-height: 4rem;
+    font-weight: 400;
+    text-align: justify;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  /* Section contatos*/
+
+  #section-contatos {
+    padding-bottom: 1000px;
+    height: 510px;
+  }
+
+  #section-contatos .title-contatos {
+    font-size: 3.5rem;
+  }
+
+  #section-contatos .input-name {
+    width: 86%;
+    margin-left: 2%;
+    height: 30px;
+    margin-bottom: 30px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 0 black;
+    font-size: 2rem;
+    box-sizing: border-box;
+  }
+
+  #section-contatos .input-email {
+    width: 87%;
+    margin-left: 0%;
+    height: 30px;
+    margin-bottom: 30px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 0 black;
+    font-size: 2rem;
+    box-sizing: border-box;
+  }
+
+  #section-contatos .input-mensagem {
+    width: 95%;
+    height: 180px;
+    margin-bottom: 30px;
+    border: 2px solid black;
+    box-shadow: 4px 4px 0 black;
+    font-size: 2rem;
+    text-align: start;
+  }
+
+  #section-contatos .input-button {
+    font-family: var(--font-secundary);
+    width: 97%;
+    height: 40px;
+    margin-bottom: 50px;
+    border: 3px solid black;
+    box-shadow: 4px 4px 0 black;
+  }
+
+  /* section footer*/
+
+  footer {
+    padding-bottom: 0px;
+    height: 100px;
+  }
+
+  .title-footer {
+    font-size: 2rem;
+  }
+
+  .logo-footer {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Responsivo Mobile  large */
 
 @media (max-width: 425px) {
   html {
@@ -141,14 +510,25 @@
   }
 
   /* botão nav */
+  nav {
+    text-align: center;
+  }
 
   header nav .button {
-    width: 20%;
-    height: 30px;
-    padding-inline: 20px;
+    width: 80px;
+    height: 35px;
     box-sizing: content-box;
     white-space: nowrap;
-    line-height: 30px;
+    line-height: 35px;
+    display: inline-flex;
+    color: var(--text-color);
+    font-family: var(--font-primary);
+    font-weight: 400;
+    align-items: center;
+  }
+
+  .button:hover {
+    border-bottom: 3px solid var(--Color-primary);
   }
 
   /* Section Banner*/
@@ -340,5 +720,906 @@
   .logo-footer {
     width: 50px;
     height: 50px;
+  }
+}
+
+/* responsive mobille large ate o mediun */
+@media (max-width: 424px) {
+  html {
+    width: 100%;
+    font-size: 35%;
+    box-sizing: content-box;
+  }
+
+  /* botão nav */
+  nav {
+    text-align: center;
+  }
+
+  header nav .button {
+    width: 80px;
+    height: 35px;
+    box-sizing: content-box;
+    white-space: nowrap;
+    line-height: 35px;
+    display: inline-flex;
+    color: var(--text-color);
+    font-family: var(--font-primary);
+    font-weight: 400;
+    align-items: center;
+  }
+
+  .button:hover {
+    border-bottom: 3px solid var(--Color-primary);
+  }
+
+  /* Section Banner*/
+
+  #section-banner .box-banner {
+    padding: 25px 10px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    box-shadow: 2px 5px 0px #000;
+  }
+
+  #section-banner {
+    padding-top: 40px;
+    height: 400px;
+  }
+
+  #section-banner .wrapper-banner {
+    box-sizing: content-box;
+    align-items: center;
+    width: 15%;
+    height: 0%;
+    white-space: nowrap;
+    margin-left: 70px;
+  }
+
+  #section-banner .title-banner {
+    font-size: 3.5rem;
+  }
+
+  #section-banner .subtitle-banner {
+    font-size: 2.5rem;
+  }
+
+  #section-banner .button-b {
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    box-shadow: 1px 3px 0px #000;
+  }
+
+  /* section skills */
+
+  #section-skills {
+    padding-bottom: 0%;
+  }
+
+  #section-skills .title-skills {
+    font-size: 3.5rem;
+  }
+
+  #section-skills .progress-bar {
+    min-width: 110px;
+    height: 20px;
+    border: 2px solid #000;
+  }
+
+  #section-skills .icon {
+    width: 30%;
+    height: 45px;
+    margin-right: 5px;
+  }
+
+  #section-skills .title {
+    font-size: 11px;
+  }
+
+  #section-skills .wrapper-skills {
+    margin-bottom: 10px;
+  }
+
+  /* Section Projects*/
+
+  #section-projects {
+    padding-bottom: 50px;
+  }
+
+  #section-projects .title-projects {
+    font-size: 3.5rem;
+  }
+
+  #section-projects .wrapper-cards {
+    grid-template-columns: repeat(3, minmax(70px, 0.5fr));
+  }
+  #section-projects .background-projects {
+    width: 90px;
+    height: 93px;
+  }
+
+  /* section sobre */
+
+  #section-sobre {
+    padding-bottom: 50px;
+  }
+
+  #section-sobre .title-sobre {
+    font-size: 3.5rem;
+  }
+
+  #section-sobre .cards-sobre .logo-cards {
+    height: 90px;
+    width: 90px;
+    border: 2px solid black;
+  }
+
+  #section-sobre .cards-sobre::before {
+    height: 0;
+    width: 20px;
+    bottom: 90px;
+  }
+
+  #section-sobre .description-sobre {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    font-weight: 400;
+    text-align: justify;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  /* Section contatos*/
+
+  #section-contatos {
+    padding-bottom: 50px;
+    height: 510px;
+  }
+
+  #section-contatos .input-contatos {
+    margin-left: 50px;
+    margin-right: 0px;
+  }
+  #section-contatos .title-contatos {
+    font-size: 3.5rem;
+  }
+
+  #section-contatos .input-name {
+    width: 87%;
+    margin-left: 0%;
+    height: 30px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 0 black;
+    font-size: 2rem;
+    box-sizing: border-box;
+  }
+
+  #section-contatos .input-email {
+    width: 87%;
+    margin-left: 0%;
+    height: 30px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 0 black;
+    font-size: 2rem;
+    box-sizing: border-box;
+  }
+
+  #section-contatos .input-mensagem {
+    width: 85%;
+    height: 150px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    box-shadow: 4px 4px 0 black;
+    font-size: 2rem;
+    text-align: start;
+  }
+
+  #section-contatos .input-button {
+    font-family: var(--font-secundary);
+    width: 88%;
+    height: 40px;
+    margin-bottom: 0px;
+    border: 3px solid black;
+    box-shadow: 4px 4px 0 black;
+  }
+
+  /* section footer*/
+
+  footer {
+    padding-bottom: 10px;
+    height: 100px;
+  }
+
+  .title-footer {
+    font-size: 2rem;
+  }
+
+  .logo-footer {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/*responsive mobile mediun */
+@media (max-width: 375px) {
+  html {
+    width: 100%;
+    font-size: 35%;
+    box-sizing: content-box;
+  }
+
+  /* botão nav */
+  nav {
+    text-align: center;
+  }
+
+  header nav .button {
+    width: 80px;
+    height: 35px;
+    box-sizing: content-box;
+    white-space: nowrap;
+    line-height: 35px;
+    display: inline-flex;
+    color: var(--text-color);
+    font-family: var(--font-primary);
+    font-weight: 400;
+    align-items: center;
+  }
+
+  .button:hover {
+    border-bottom: 3px solid var(--Color-primary);
+  }
+
+  /* Section Banner*/
+
+  #section-banner .box-banner {
+    padding: 25px 10px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    box-shadow: 2px 5px 0px #000;
+  }
+
+  #section-banner {
+    padding-top: 40px;
+    height: 400px;
+  }
+
+  #section-banner .wrapper-banner {
+    box-sizing: content-box;
+    align-items: center;
+    width: 15%;
+    height: 0%;
+    white-space: nowrap;
+    margin-left: 70px;
+  }
+
+  #section-banner .title-banner {
+    font-size: 3.5rem;
+  }
+
+  #section-banner .subtitle-banner {
+    font-size: 2.5rem;
+  }
+
+  #section-banner .button-b {
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    box-shadow: 1px 3px 0px #000;
+  }
+
+  /* section skills */
+
+  #section-skills {
+    padding-bottom: 0%;
+  }
+
+  #section-skills .title-skills {
+    font-size: 3.5rem;
+  }
+
+  #section-skills .progress-bar {
+    min-width: 110px;
+    height: 20px;
+    border: 2px solid #000;
+  }
+
+  #section-skills .icon {
+    width: 30%;
+    height: 45px;
+    margin-right: 5px;
+  }
+
+  #section-skills .title {
+    font-size: 11px;
+  }
+
+  #section-skills .wrapper-skills {
+    margin-bottom: 10px;
+  }
+
+  /* Section Projects*/
+
+  #section-projects {
+    padding-bottom: 50px;
+  }
+
+  #section-projects .title-projects {
+    font-size: 3.5rem;
+  }
+
+  #section-projects .wrapper-cards {
+    grid-template-columns: repeat(3, minmax(70px, 0.5fr));
+  }
+  #section-projects .background-projects {
+    width: 90px;
+    height: 93px;
+  }
+
+  /* section sobre */
+
+  #section-sobre {
+    padding-bottom: 50px;
+  }
+
+  #section-sobre .title-sobre {
+    font-size: 3.5rem;
+  }
+
+  #section-sobre .cards-sobre .logo-cards {
+    height: 90px;
+    width: 90px;
+    border: 2px solid black;
+  }
+
+  #section-sobre .cards-sobre::before {
+    height: 0;
+    width: 20px;
+    bottom: 90px;
+  }
+
+  #section-sobre .description-sobre {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    font-weight: 400;
+    text-align: justify;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  /* Section contatos*/
+
+  #section-contatos {
+    padding-bottom: 50px;
+    height: 510px;
+  }
+
+  #section-contatos .input-contatos {
+    margin-left: 50px;
+    margin-right: 0px;
+  }
+  #section-contatos .title-contatos {
+    font-size: 3.5rem;
+  }
+
+  #section-contatos .input-name {
+    width: 87%;
+    margin-left: 0%;
+    height: 30px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 0 black;
+    font-size: 2rem;
+    box-sizing: border-box;
+  }
+
+  #section-contatos .input-email {
+    width: 87%;
+    margin-left: 0%;
+    height: 30px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 0 black;
+    font-size: 2rem;
+    box-sizing: border-box;
+  }
+
+  #section-contatos .input-mensagem {
+    width: 85%;
+    height: 150px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    box-shadow: 4px 4px 0 black;
+    font-size: 2rem;
+    text-align: start;
+  }
+
+  #section-contatos .input-button {
+    font-family: var(--font-secundary);
+    width: 88%;
+    height: 40px;
+    margin-bottom: 0px;
+    border: 3px solid black;
+    box-shadow: 4px 4px 0 black;
+  }
+
+  /* section footer*/
+
+  footer {
+    padding-bottom: 10px;
+    height: 100px;
+  }
+
+  .title-footer {
+    font-size: 2rem;
+  }
+
+  .logo-footer {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* responstive mobile small ate mediun */
+
+@media (max-width: 374px) {
+  html {
+    width: 100%;
+    font-size: 28%;
+    box-sizing: content-box;
+  }
+
+  .logo {
+    width: 80px;
+    height: 55px;
+  }
+
+  /* botão nav */
+  nav {
+    text-align: center;
+  }
+
+  header nav .button {
+    width: 70px;
+    height: 30px;
+    box-sizing: content-box;
+    white-space: nowrap;
+    line-height: 30px;
+    display: inline-flex;
+    color: var(--text-color);
+    font-family: var(--font-primary);
+    font-weight: 400;
+    align-items: center;
+    display: none;
+  }
+
+  .button:hover {
+    border-bottom: 3px solid var(--Color-primary);
+  }
+
+  /* Section Banner*/
+
+  #section-banner .box-banner {
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    box-shadow: 2px 5px 0px #000;
+  }
+
+  #section-banner {
+    padding-top: 40px;
+    height: 350px;
+  }
+
+  #section-banner .wrapper-banner {
+    box-sizing: content-box;
+    align-items: center;
+    width: 15%;
+    height: 0%;
+    white-space: nowrap;
+    margin-left: 45px;
+  }
+
+  #section-banner .title-banner {
+    font-size: 3.5rem;
+  }
+
+  #section-banner .subtitle-banner {
+    font-size: 2.5rem;
+  }
+
+  #section-banner .button-b {
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    box-shadow: 1px 3px 0px #000;
+  }
+
+  /* section skills */
+
+  #section-skills {
+    padding-bottom: 0%;
+  }
+
+  #section-skills .title-skills {
+    font-size: 4rem;
+  }
+
+  #section-skills .progress-bar {
+    min-width: 100px;
+    height: 20px;
+    border: 2px solid #000;
+  }
+
+  #section-skills .icon {
+    width: 30%;
+    height: 45px;
+    margin-right: 5px;
+  }
+
+  #section-skills .title {
+    font-size: 10px;
+  }
+
+  #section-skills .wrapper-skills {
+    margin-bottom: 10px;
+  }
+
+  /* Section Projects*/
+
+  #section-projects {
+    padding-bottom: 50px;
+  }
+
+  #section-projects .title-projects {
+    font-size: 3.5rem;
+  }
+
+  #section-projects .wrapper-cards {
+    grid-template-columns: repeat(3, minmax(70px, 0.5fr));
+  }
+  #section-projects .background-projects {
+    width: 80px;
+    height: 83px;
+  }
+
+  /* section sobre */
+
+  #section-sobre {
+    padding-bottom: 50px;
+  }
+
+  #section-sobre .title-sobre {
+    font-size: 4rem;
+  }
+
+  #section-sobre .cards-sobre .logo-cards {
+    height: 80px;
+    width: 80px;
+    border: 2px solid black;
+  }
+
+  #section-sobre .cards-sobre::before {
+    height: 0;
+    width: 20px;
+    bottom: 80px;
+  }
+
+  #section-sobre .description-sobre {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    font-weight: 400;
+    text-align: justify;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  /* Section contatos*/
+
+  #section-contatos {
+    padding-bottom: 50px;
+    height: 510px;
+  }
+
+  #section-contatos .input-contatos {
+    margin-left: 50px;
+    margin-right: 0px;
+  }
+  #section-contatos .title-contatos {
+    font-size: 3.5rem;
+  }
+
+  #section-contatos .input-name {
+    width: 87%;
+    margin-left: 0%;
+    height: 30px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 0 black;
+    font-size: 2rem;
+    box-sizing: border-box;
+  }
+
+  #section-contatos .input-email {
+    width: 87%;
+    margin-left: 0%;
+    height: 30px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 0 black;
+    font-size: 2rem;
+    box-sizing: border-box;
+  }
+
+  #section-contatos .input-mensagem {
+    width: 85%;
+    height: 150px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    box-shadow: 4px 4px 0 black;
+    font-size: 2rem;
+    text-align: start;
+  }
+
+  #section-contatos .input-button {
+    font-family: var(--font-secundary);
+    width: 88%;
+    height: 40px;
+    margin-bottom: 0px;
+    border: 3px solid black;
+    box-shadow: 4px 4px 0 black;
+  }
+
+  /* section footer*/
+
+  footer {
+    padding-bottom: 10px;
+    height: 80px;
+  }
+
+  .title-footer {
+    font-size: 2.5rem;
+  }
+
+  .logo-footer {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* responsive mobile small */
+@media (max-width: 320px) {
+  html {
+    width: 100%;
+    font-size: 28%;
+    box-sizing: content-box;
+  }
+
+  .logo {
+    width: 80px;
+    height: 55px;
+  }
+
+  /* botão nav */
+  nav {
+    text-align: center;
+  }
+
+  header nav .button {
+    width: 70px;
+    height: 30px;
+    box-sizing: content-box;
+    white-space: nowrap;
+    line-height: 30px;
+    display: inline-flex;
+    color: var(--text-color);
+    font-family: var(--font-primary);
+    font-weight: 400;
+    align-items: center;
+    display: none;
+  }
+
+  .button:hover {
+    border-bottom: 3px solid var(--Color-primary);
+  }
+
+  /* Section Banner*/
+
+  #section-banner .box-banner {
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    box-shadow: 2px 5px 0px #000;
+  }
+
+  #section-banner {
+    padding-top: 40px;
+    height: 350px;
+  }
+
+  #section-banner .wrapper-banner {
+    box-sizing: content-box;
+    align-items: center;
+    width: 15%;
+    height: 0%;
+    white-space: nowrap;
+    margin-left: 45px;
+  }
+
+  #section-banner .title-banner {
+    font-size: 3.5rem;
+  }
+
+  #section-banner .subtitle-banner {
+    font-size: 2.5rem;
+  }
+
+  #section-banner .button-b {
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    box-shadow: 1px 3px 0px #000;
+  }
+
+  /* section skills */
+
+  #section-skills {
+    padding-bottom: 0%;
+  }
+
+  #section-skills .title-skills {
+    font-size: 4rem;
+  }
+
+  #section-skills .progress-bar {
+    min-width: 100px;
+    height: 20px;
+    border: 2px solid #000;
+  }
+
+  #section-skills .icon {
+    width: 30%;
+    height: 45px;
+    margin-right: 5px;
+  }
+
+  #section-skills .title {
+    font-size: 10px;
+  }
+
+  #section-skills .wrapper-skills {
+    margin-bottom: 10px;
+  }
+
+  /* Section Projects*/
+
+  #section-projects {
+    padding-bottom: 50px;
+  }
+
+  #section-projects .title-projects {
+    font-size: 3.5rem;
+  }
+
+  #section-projects .wrapper-cards {
+    grid-template-columns: repeat(3, minmax(70px, 0.5fr));
+  }
+  #section-projects .background-projects {
+    width: 80px;
+    height: 83px;
+  }
+
+  /* section sobre */
+
+  #section-sobre {
+    padding-bottom: 50px;
+  }
+
+  #section-sobre .title-sobre {
+    font-size: 4rem;
+  }
+
+  #section-sobre .cards-sobre .logo-cards {
+    height: 80px;
+    width: 80px;
+    border: 2px solid black;
+  }
+
+  #section-sobre .cards-sobre::before {
+    height: 0;
+    width: 20px;
+    bottom: 80px;
+  }
+
+  #section-sobre .description-sobre {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    font-weight: 400;
+    text-align: justify;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  /* Section contatos*/
+
+  #section-contatos {
+    padding-bottom: 50px;
+    height: 510px;
+  }
+
+  #section-contatos .input-contatos {
+    margin-left: 50px;
+    margin-right: 0px;
+  }
+  #section-contatos .title-contatos {
+    font-size: 3.5rem;
+  }
+
+  #section-contatos .input-name {
+    width: 87%;
+    margin-left: 0%;
+    height: 30px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 0 black;
+    font-size: 2rem;
+    box-sizing: border-box;
+  }
+
+  #section-contatos .input-email {
+    width: 87%;
+    margin-left: 0%;
+    height: 30px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 0 black;
+    font-size: 2rem;
+    box-sizing: border-box;
+  }
+
+  #section-contatos .input-mensagem {
+    width: 85%;
+    height: 150px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    box-shadow: 4px 4px 0 black;
+    font-size: 2rem;
+    text-align: start;
+  }
+
+  #section-contatos .input-button {
+    font-family: var(--font-secundary);
+    width: 88%;
+    height: 40px;
+    margin-bottom: 0px;
+    border: 3px solid black;
+    box-shadow: 4px 4px 0 black;
+  }
+
+  /* section footer*/
+
+  footer {
+    padding-bottom: 10px;
+    height: 80px;
+  }
+
+  .title-footer {
+    font-size: 2.5rem;
+  }
+
+  .logo-footer {
+    width: 45px;
+    height: 45px;
   }
 }
