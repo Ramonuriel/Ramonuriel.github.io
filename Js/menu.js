@@ -1,13 +1,13 @@
 // Menu Responsivo //
+let show = true
+
 const menu = document.querySelector('.menu')
+const menuToggle = menu.querySelector('.menu-toggle')
 
-function menuToggle(event) {
-  if (event.type === 'touchstart') event.preventDefalut()
-  {
-  }
-  const menuToggle = document.getElementById('.menu-toggle')
-  menu.classList.toggle('on')
-}
+menuToggle.addEventListener('click', () => {
+  document.body.style.overflow = show ? 'hidden' : 'initial'
 
-menu.addEventListener('click', menuToggle)
-menu.addEventListener('touchstart', menuToggle)
+  menu.classList.toggle('on', show)
+
+  show = !show
+})
